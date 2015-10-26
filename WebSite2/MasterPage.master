@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Mysite Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image:url(Images/back2.jpg)">
+    <form id="form1" runat="server"><center>
+    <table width="900" style="height: 701px">
+    <tr><td colspan="2">
+        <img width="900" src="nevlogo.jpg" alt="Nevon logo"/></td></tr>
+    <tr><td style="border-right-width:medium; border-right-style:double; border-right-color:Olive">
+    <ul style="font-size:medium">
+    <li><a href="Home.aspx">Home</a></li>
+    <li><a href="About Us.aspx">About Us</a></li>
+    <li><a href="Contact Us.aspx">Contact Us</a></li>
+    </ul><br />
+    
+    <img src="Images/image1.jpg" alt="Image1"/><br /><hr />
+    <img src="Images/image2.jpg" alt="Image2"/>
+    
+  
+    </td><td align="left">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </td></tr>
+    
+    </table>
+    <table style="border-bottom-width:thin; border-bottom-style:ridge; border-top-style:double">
+    
+    </table>
+
+    
+    </center>
+        
+   
+    </form>
+</body>
+</html>

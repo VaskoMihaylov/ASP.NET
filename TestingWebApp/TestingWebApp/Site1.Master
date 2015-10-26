@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>My Website</title>
+    <script type="text/javascript" src="JavaScript/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript">
+        function mainmenu(parameters) {
+            $(" #nav ul").css({ display: "none" }); //Opera fix
+
+            $(" #nav li").hover(function () {
+                $(this).find('ul:first').css({ visibility: "visible", display: "none" }).show(400);
+            }, function () {
+                $(this).find('ul:first').css({ visibility: "hidden" });
+            });
+        }
+
+        $(document).ready(function () {
+            mainmenu();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="~/Styles/StyleSheet1.css"/>
+</head>
+<body>
+<form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="banner">
+            
+        </div>
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="#">Home</a></li> 
+                <li><a href="~/Pages/Coffee.aspx">Coffee </a>
+            <ul>
+                <li><a href="#">Regular</a></li>
+                <li><a href="#">Espresso</a></li>
+                <li><a href="#">Latte</a></li>
+            </ul>
+         </li>    
+         <li><a href="#">Shop</a></li>
+         <li><a href="#">About</a></li>
+        </ul>   
+      </div>
+        <div id="content_area">
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        </div>
+        <div id="sidebar">
+            
+        </div>
+        <div id="footer">
+            
+        </div>
+        <p>All Rights Reserved.</p>
+    </div>
+</form>
+</body>
+</html>

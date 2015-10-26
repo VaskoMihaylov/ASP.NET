@@ -1,0 +1,6 @@
+D:\Projects\TestingWebApp\TestingWebApp\bin\TestingWebApp.dll.config
+D:\Projects\TestingWebApp\TestingWebApp\bin\TestingWebApp.dll
+D:\Projects\TestingWebApp\TestingWebApp\bin\TestingWebApp.pdb
+D:\Projects\TestingWebApp\TestingWebApp\obj\Debug\TestingWebApp.csprojResolveAssemblyReference.cache
+D:\Projects\TestingWebApp\TestingWebApp\obj\Debug\TestingWebApp.dll
+D:\Projects\TestingWebApp\TestingWebApp\obj\Debug\TestingWebApp.pdb
